@@ -1,0 +1,872 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c6c6c6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #c0ceec;
+    color: #333;
+    padding: 5px;
+    text-align: letf;
+    position: fixed; /* Rend la navigation fixe */
+    width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+    top: 0;
+    z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+}
+
+footer{
+    background-color: #c0ceec;
+    padding: 0px 0px 10px 10px;
+}
+
+.divContact{
+    display: flex;
+    flex-direction: row;
+
+}
+.contact{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    margin: 0px 10px 0px 0px; /*Position de départ*/
+    text-align: center;
+    padding: 10px;
+    box-shadow: 10px 10px 15px #8a8787;
+}
+
+nav {
+    background-color: #013b78;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 13px 0px 0px 0px; /*Position de départ*/
+    position: fixed; /* Rend la navigation fixe */
+    width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+    top: 70px;
+    z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+    padding: 20px;
+    font-size : 15px;
+}
+
+
+nav ul {
+    background-color: #013b78;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    font-size: 20px;
+    font-style: bold;
+}
+
+.applications, .guide, .version, .news { /*Sections */
+    padding: 20px;
+    background-color: white;
+    margin: 10% 5% 0% 5%;
+    background-attachment: fixed;
+    border-radius: 50px;
+    box-shadow: 10px 10px 15px #8a8787;
+
+}
+
+.application{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.application { /* Info Exp Pro */
+    flex: 1;
+    text-align: center;
+    margin: auto;
+
+}
+
+.PlusInformation{
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 1%;
+    padding: 0% 5% 0% 5%;
+    box-shadow: 10px 10px 15px #8a8787;
+}
+
+.logoAppli{
+    width:200px;
+    height:200px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 15px #8a8787;
+
+}
+
+.logoApplis{
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    }
+
+
+.BtnDownload{
+    background-color: green;
+    text-decoration: none;
+    color: black;
+    margin: 1% 40% 0% 40%;
+    padding: 20px;
+    border-radius: 25%;
+    border-color: green;
+    box-shadow: 10px 10px 15px #8a8787;
+}
+
+.LinkDownload{
+    background-color: green;
+    text-decoration: none;
+    color: black;
+}
+
+.developpement{
+    color: red;
+}
+
+.guideVideo {
+    height: 700px;
+    border-radius: 2%;
+    box-shadow: 10px 10px 15px #8a8787;
+
+}
+
+.clickCount{
+    margin: -25px 0px 30px 0px;
+}
+
+.versionApp{
+    font-size: 20px;
+}
+
+.subtitleApp{
+    margin: -25px 0px 0px 10px;
+}
+
+.imagelogoStockWare{
+    width: 35px;
+    margin: -70px 0px 15px 10px;
+}
+
+.menu{
+    margin: 20px 0px 0px 50px;
+}
+
+.flag{
+    width: 35px;
+    margin: -40px 10px 13px 10px;
+}
+
+.title{
+    margin: 0px 0px 0px 55px;
+}
+
+.newDiv{
+    margin: 0px 0px 0px 55px;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px #8a8787;
+
+    padding: 10px;
+    margin: 10px;
+
+}
+
+
+
+
+/*=========================================== 1280 px ===========================================*/
+
+@media (max-width: 1280px) {
+
+    nav {
+    background-color: #013b78;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 13px 0px 0px 0px; /*Position de départ*/
+    position: fixed; /* Rend la navigation fixe */
+    width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+    top: 70px;
+    z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+    padding: 20px;
+    font-size : 15px;
+}
+
+
+nav ul {
+    background-color: #013b78;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    font-size: 20px;
+    font-style: bold;
+}
+    .applications, .guide, .version, .news { /*Sections */
+        padding: 20px;
+        background-color: white;
+        margin: 15% 5% 0% 5%;
+        background-attachment: fixed;
+        border-radius: 50px;
+    }
+}
+
+
+/*=========================================== 1000 px ===========================================*/
+
+@media (max-width: 1000px) {
+
+    nav {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        margin: 13px 0px 0px 0px; /*Position de départ*/
+        text-align: center;
+        position: fixed; /* Rend la navigation fixe */
+        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+        top: 70px;
+        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+        padding: 20px;
+        font-size : 13px;
+    }
+
+
+    nav ul {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        font-size: 18px;
+        font-style: bold;
+    }
+}
+
+/*=========================================== 900 px ===========================================*/
+
+@media (max-width: 900px) {
+
+    .applications, .guide, .version, .news { /*Sections */
+        padding: 20px;
+        background-color: white;
+        margin: 15% 5% 0% 5%;
+        background-attachment: fixed;
+        border-radius: 50px;
+    }
+}
+
+/*=========================================== 850 px ===========================================*/
+
+@media (max-width: 850px) {
+
+    nav {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        position: fixed; /* Rend la navigation fixe */
+        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+        top: 70px;
+        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+        padding: 20px;
+        font-size : 13px;
+    }
+
+
+    nav ul {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        font-size: 18px;
+        font-style: bold;
+    }
+    .applications, .guide, .version, .news { /*Sections */
+        padding: 20px;
+        background-color: white;
+        margin: 20% 5% 0% 5%;
+        background-attachment: fixed;
+        border-radius: 50px;
+    }
+}
+
+/*=========================================== 710 px ===========================================*/
+
+@media (max-width: 710px) {
+
+    nav {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        position: fixed; /* Rend la navigation fixe */
+        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+        top: 70px;
+        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+        padding: 20px;
+        font-size : 12px;
+    }
+
+
+    nav ul {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 20px;
+        border: 0px solid transparent;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        font-size: 12px;
+        font-style: bold;
+    }
+    .applications, .guide, .version, .news { /*Sections */
+        padding: 20px;
+        background-color: white;
+        margin: 25% 5% 0% 5%;
+        background-attachment: fixed;
+        border-radius: 50px;
+    }
+
+}
+
+/*=========================================== 640 px ===========================================*/
+
+@media (max-width: 640px) {
+
+    nav {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        position: fixed; /* Rend la navigation fixe */
+        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+        top: 70px;
+        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+        padding: 20px;
+        font-size : 11px;
+    }
+
+
+    nav ul {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 20px;
+        border: 0px solid transparent;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        font-size: 11px;
+        font-style: bold;
+    }
+    .applications, .guide, .version, .news { /*Sections */
+        padding: 20px;
+        background-color: white;
+        margin: 25% 5% 0% 5%;
+        background-attachment: fixed;
+        border-radius: 50px;
+    }
+}
+
+/*=========================================== 595 px ===========================================*/
+
+@media (max-width: 595px) {
+
+    nav {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        position: fixed; /* Rend la navigation fixe */
+        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+        top: 70px;
+        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+        padding: 20px;
+        font-size : 10px;
+    }
+
+
+    nav ul {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 20px;
+        border: 0px solid transparent;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        font-size: 10px;
+        font-style: bold;
+    }
+    
+    .applications, .guide, .version, .news { /*Sections */
+        padding: 20px;
+        background-color: white;
+        margin: 25% 5% 0% 5%;
+        background-attachment: fixed;
+        border-radius: 50px;
+    }
+}
+
+/*=========================================== 550 px ===========================================*/
+
+@media (max-width: 550px) {
+
+    nav {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        position: fixed; /* Rend la navigation fixe */
+        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+        top: 70px;
+        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+        padding: 20px;
+        font-size : 9px;
+    }
+
+
+    nav ul {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 15px;
+        border: 0px solid transparent;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        font-size: 9px;
+        font-style: bold;
+    }
+
+    .applications, .guide, .version, .news { /*Sections */
+        padding: 20px;
+        background-color: white;
+        margin: 25% 5% 0% 5%;
+        background-attachment: fixed;
+        border-radius: 50px;
+    }
+}
+
+
+/*=========================================== 505 px ===========================================*/
+
+@media (max-width: 505px) {
+
+    nav {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        position: fixed; /* Rend la navigation fixe */
+        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+        top: 70px;
+        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+        padding: 20px;
+        font-size : 8px;
+    }
+
+
+    nav ul {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 5px;
+        border: 0px solid transparent;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {font-style: bold;
+        font-size: 8px;
+        font-style: bold;
+    }
+
+
+    .applications, .guide, .version, .news { /*Sections */
+        padding: 20px;
+        background-color: white;
+        margin: 25% 5% 0% 5%;
+        background-attachment: fixed;
+        border-radius: 50px;
+    }
+}
+
+/*=========================================== 470 px ===========================================*/
+
+@media (max-width: 470px) {
+
+    nav {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        position: fixed; /* Rend la navigation fixe */
+        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+        top: 70px;
+        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+        padding: 20px;
+        font-size : 8px;
+    }
+
+
+    nav ul {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 5px;
+        border: 0px solid transparent;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        font-size: 8px;
+        font-style: bold;
+    }
+
+    .applications, .guide, .version, .news { /*Sections */
+        padding: 20px;
+        background-color: white;
+        margin: 30% 5% 0% 5%;
+        background-attachment: fixed;
+        border-radius: 50px;
+    }
+
+}
+
+/*=========================================== 455 px ===========================================*/
+
+@media (max-width: 455px) {
+
+    nav {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        position: fixed; /* Rend la navigation fixe */
+        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+        top: 70px;
+        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+        padding: 20px;
+        font-size : 8px;
+    }
+
+
+    nav ul {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 5px;
+        border: 0px solid transparent;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        font-size: 8px;
+        font-style: bold;
+    }
+
+    .applications, .guide, .version, .news { /*Sections */
+        padding: 20px;
+        background-color: white;
+        margin: 35% 5% 0% 5%;
+        background-attachment: fixed;
+        border-radius: 50px;
+    }
+
+    .subtitleApp{
+        margin: -25px 0px 0px 10px;
+        font-size: 10px;
+    }
+
+    .imagelogoStockWare{
+        width: 30px;
+        margin: -70px 0px 15px 10px;
+    }
+
+    .menu{
+        font-size: 25px;
+        margin: 20px 0px 0px 50px;
+    }
+}
+
+
+/*=========================================== 420 px ===========================================*/
+
+@media (max-width: 420px) {
+
+    nav {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        margin: 6px 0px 0px 0px; /*Position de départ*/
+        position: fixed; /* Rend la navigation fixe */
+        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+        top: 70px;
+        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+        padding: 20px;
+        font-size : 8px;
+    }
+
+
+    nav ul {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+        text-align: left;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 0px 0px;
+        border: 0px solid transparent;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        font-size: 8px;
+        font-style: bold;
+    }
+
+
+}
+/*=========================================== 395 px ===========================================*/
+
+@media (max-width: 395px) {
+
+    nav {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        position: fixed; /* Rend la navigation fixe */
+        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
+        top: 70px;
+        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+        padding: 20px;
+        font-size : 7px;
+    }
+
+
+    nav ul {
+        background-color: #013b78;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+        text-align: letf;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 20px, 0px 0px 0px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 0px;
+        border: 0px solid transparent;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        font-size: 9px;
+        font-style: bold;
+    }
+    .applications, .guide, .version, .news { /*Sections */
+        padding: 20px;
+        background-color: white;
+        margin: 35% 5% 0% 5%;
+        background-attachment: fixed;
+        border-radius: 50px;
+    }
+}
+

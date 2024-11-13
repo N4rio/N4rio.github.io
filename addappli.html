@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Ware : Demande d'ajout</title>
+    <link rel="stylesheet" href="styles/stylesappli.css">
+    <link rel="icon" type="image/png" href="Images/iconestackware.png">
+</head>
+<body>
+
+<header>
+        <h1 class="menu">Stock Ware</h1>
+        <img class="imagelogoStockWare" src="Images/iconestackware.png"/>
+    </header>
+
+
+     <section id="appli" class="applications">
+        <p>To submit your application, I need some information about you and your application.</p> 
+        <p><strong>If you don't have Discord</strong>, please provide an email address in the <i>Your Discord Account</i> field.</p>
+        <p><strong>PS</strong>: If you already have me added on Discord, please do not use this form and contact me directly.</p>
+     </section>
+    <form action="addappli.php" method="post" class="formulaire">
+        <label for="discord_account">Your Discord Account or email:</label>
+        <input type="text" id="discord_account" name="discord_account" required><br><br>
+        <label for="name_appli">The name of your application:</label>
+        <input type="text" id="name_appli" name="name_appli" required><br><br>
+
+        <label for="os">Under which operating systems is your application available?:</label>
+        <select id="os" name="os" required>
+            <option value="Android">Android</option>
+            <option value="iOS">iOS</option>
+            <option value="Windows">Windows</option>
+            <option value="Linux">Linux</option>
+            <option value="autres">Others</option>
+        </select><br><br>
+
+        <button type="submit" name="send_message">Send</button>
+    </form>
+
+</body>
