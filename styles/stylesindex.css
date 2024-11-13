@@ -2,10 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c6c6c6;
+    background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -85,11 +86,11 @@ nav ul li a:hover {
 
 .applications, .guide, .version, .news { /*Sections */
     padding: 20px;
-    background-color: white;
+    background-color: #f5f6f7;
     margin: 10% 5% 0% 5%;
     background-attachment: fixed;
     border-radius: 50px;
-    box-shadow: 10px 10px 15px #8a8787;
+    border: #555a5f solid 1px;
 
 }
 
@@ -861,6 +862,7 @@ nav ul li a:hover {
         font-size: 9px;
         font-style: bold;
     }
+
     .applications, .guide, .version, .news { /*Sections */
         padding: 20px;
         background-color: white;
