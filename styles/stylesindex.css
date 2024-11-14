@@ -1,874 +1,208 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: "Roboto", sans-serif;
 }
 
 header {
-    background-color: #c0ceec;
-    color: #333;
-    padding: 5px;
-    text-align: letf;
-    position: fixed; /* Rend la navigation fixe */
-    width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-    top: 0;
-    z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
-}
-
-footer{
-    background-color: #c0ceec;
-    padding: 0px 0px 10px 10px;
-}
-
-.divContact{
-    display: flex;
-    flex-direction: row;
-
-}
-.contact{
     background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position:fixed;
+    margin-top: -10%;
+}
+
+a{
     text-decoration: none;
     color: black;
-    border-radius: 10px;
-    margin: 0px 10px 0px 0px; /*Position de départ*/
-    text-align: center;
-    padding: 10px;
-    box-shadow: 10px 10px 15px #8a8787;
 }
-
-nav {
-    background-color: #013b78;
-    overflow: hidden;
-    color: white;
-    padding: 0;
-    text-align: center;
-    margin: 13px 0px 0px 0px; /*Position de départ*/
-    position: fixed; /* Rend la navigation fixe */
-    width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-    top: 70px;
-    z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
-    padding: 20px;
-    font-size : 15px;
-}
-
-
 nav ul {
-    background-color: #013b78;
-    overflow: hidden;
-    color: white;
-    padding: 0;
-    text-align: center;
+	
+    list-style: none;
     margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 1300px; /* Ajustez la valeur en pixels selon vos besoins */
+
 }
 
 nav ul li {
-    display: inline;
-    padding: 20px;
+  list-style: none;
+  padding: 15px;
+  color: #333;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.3s;
+nav ul li:hover {
+  color: white;
+  font-weight: bold;
+  position: relative;
 }
 
-nav ul li a:hover {
-    font-size: 20px;
-    font-style: bold;
+nav ul li:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Ajustez la hauteur de la barre */
+  width: 100%;
+  height: 3px; /* Ajustez l'épaisseur de la barre */
+  background-color: green;
+}
+
+.icones {
+    display: flex;
+}
+
+.icones a {
+    margin: 0 10px;
+}
+
+.logo{
+    width: 50px;
 }
 
 .applications, .guide, .version, .news { /*Sections */
-    padding: 20px;
-    background-color: #f5f6f7;
+    padding: 10px 0px 0px 20px;
     margin: 10% 5% 0% 5%;
     background-attachment: fixed;
     border-radius: 50px;
-    border: #555a5f solid 1px;
-
-}
-
-.application{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-.application { /* Info Exp Pro */
-    flex: 1;
-    text-align: center;
-    margin: auto;
-
-}
-
-.PlusInformation{
-    text-align: left;
-    border: 2px solid black;
-    border-radius: 50px;
-    margin: 1%;
-    padding: 0% 5% 0% 5%;
+    border: #b9c4ce solid 1px;
     box-shadow: 10px 10px 15px #8a8787;
 }
+
 
 .logoAppli{
     width:200px;
     height:200px;
     border-radius: 50px;
-    box-shadow: 10px 10px 15px #8a8787;
-
+    box-shadow: 5px 5px 5px #8a8787;
 }
 
-.logoApplis{
-    text-align: center;
-    font-size: 25px;
-    display: flex;
-    flex-direction: column;
-    }
-
-
-.BtnDownload{
-    background-color: green;
-    text-decoration: none;
-    color: black;
-    margin: 1% 40% 0% 40%;
-    padding: 20px;
-    border-radius: 25%;
-    border-color: green;
-    box-shadow: 10px 10px 15px #8a8787;
+.logoApplis-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax values as needed */
+    gap: 20px; /* Adjust gap between items */
 }
 
-.LinkDownload{
-    background-color: green;
-    text-decoration: none;
-    color: black;
-}
-
-.developpement{
-    color: red;
-}
-
-.guideVideo {
-    height: 700px;
-    border-radius: 2%;
-    box-shadow: 10px 10px 15px #8a8787;
-
-}
-
-.clickCount{
-    margin: -25px 0px 30px 0px;
-}
-
-.versionApp{
-    font-size: 20px;
-}
-
-.subtitleApp{
-    margin: -25px 0px 0px 10px;
-}
-
-.imagelogoStockWare{
-    width: 35px;
-    margin: -70px 0px 15px 10px;
-}
-
-.menu{
-    margin: 20px 0px 0px 50px;
-}
-
-.flag{
-    width: 35px;
-    margin: -40px 10px 13px 10px;
+.nomAppli{
+    margin-left: 65px;
 }
 
 .title{
-    margin: 0px 0px 0px 55px;
+    font-size: 25px;
+    margin: 0px 0px 0px 20px;
 }
 
-.newDiv{
-    margin: 0px 0px 0px 55px;
-    border: 1px solid black;
-    border-radius: 25px;
-    box-shadow: 10px 10px 15px #8a8787;
-
-    padding: 10px;
-    margin: 10px;
-
+.listNews{
+    list-style:disc;
+    margin-left: 60px;
 }
 
+.delimiteurTitre{
+    border-top: 1px solid #ccc;
+    margin-left:15px;
+    margin-right:15px;
+}
 
-
-
-/*=========================================== 1280 px ===========================================*/
-
-@media (max-width: 1280px) {
-
-    nav {
-    background-color: #013b78;
-    overflow: hidden;
-    color: white;
-    padding: 0;
-    text-align: center;
-    margin: 13px 0px 0px 0px; /*Position de départ*/
-    position: fixed; /* Rend la navigation fixe */
-    width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-    top: 70px;
-    z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
+/* Bas de page*/
+footer {
+    background-color: #f5f5f5;
     padding: 20px;
-    font-size : 15px;
-}
-
-
-nav ul {
-    background-color: #013b78;
-    overflow: hidden;
-    color: white;
-    padding: 0;
     text-align: center;
-    margin: 0;
 }
 
-nav ul li {
-    display: inline;
-    padding: 20px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.3s;
+.row {
+    display: flex;
+    justify-content: space-between;
 }
 
-nav ul li a:hover {
-    font-size: 20px;
-    font-style: bold;
+.col-md-6 {
+    flex: 1;
 }
-    .applications, .guide, .version, .news { /*Sections */
-        padding: 20px;
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/*=========================================== 840 px ===========================================*/
+
+@media (max-width: 840px) {
+
+    header {
         background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position:fixed;
+        margin-top: -15%;
+    }
+
+    .applications, .guide, .version, .news { /*Sections */
+        padding: 10px 0px 0px 20px;
         margin: 15% 5% 0% 5%;
         background-attachment: fixed;
         border-radius: 50px;
+        border: #b9c4ce solid 1px;
+        box-shadow: 10px 10px 15px #8a8787;
     }
 }
 
+/*=========================================== 540 px ===========================================*/
 
-/*=========================================== 1000 px ===========================================*/
+@media (max-width: 540px) {
 
-@media (max-width: 1000px) {
-
-    nav {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        margin: 13px 0px 0px 0px; /*Position de départ*/
-        text-align: center;
-        position: fixed; /* Rend la navigation fixe */
-        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-        top: 70px;
-        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
-        padding: 20px;
-        font-size : 13px;
+    header {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position:fixed;
+        margin-top: -20%;
     }
-
-
-    nav ul {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        padding: 0;
-        text-align: center;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        padding: 5px 20px;
-        border: 1px solid transparent;
-        transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-        font-size: 18px;
-        font-style: bold;
-    }
-}
-
-/*=========================================== 900 px ===========================================*/
-
-@media (max-width: 900px) {
 
     .applications, .guide, .version, .news { /*Sections */
-        padding: 20px;
-        background-color: white;
-        margin: 15% 5% 0% 5%;
-        background-attachment: fixed;
-        border-radius: 50px;
-    }
-}
-
-/*=========================================== 850 px ===========================================*/
-
-@media (max-width: 850px) {
-
-    nav {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        text-align: center;
-        position: fixed; /* Rend la navigation fixe */
-        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-        top: 70px;
-        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
-        padding: 20px;
-        font-size : 13px;
-    }
-
-
-    nav ul {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        padding: 0;
-        text-align: center;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        padding: 5px 20px;
-        border: 1px solid transparent;
-        transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-        font-size: 18px;
-        font-style: bold;
-    }
-    .applications, .guide, .version, .news { /*Sections */
-        padding: 20px;
-        background-color: white;
+        padding: 10px 0px 0px 20px;
         margin: 20% 5% 0% 5%;
         background-attachment: fixed;
         border-radius: 50px;
+        border: #b9c4ce solid 1px;
+        box-shadow: 10px 10px 15px #8a8787;
     }
 }
 
-/*=========================================== 710 px ===========================================*/
+/*=========================================== 400 px ===========================================*/
 
-@media (max-width: 710px) {
+@media (max-width: 400px) {
 
-    nav {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        text-align: center;
-        position: fixed; /* Rend la navigation fixe */
-        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-        top: 70px;
-        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
-        padding: 20px;
-        font-size : 12px;
-    }
-
-
-    nav ul {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        padding: 0;
-        text-align: center;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        padding: 5px 20px;
-        border: 0px solid transparent;
-        transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-        font-size: 12px;
-        font-style: bold;
-    }
-    .applications, .guide, .version, .news { /*Sections */
-        padding: 20px;
+    header {
         background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position:fixed;
+        margin-top: -25%;
+    }
+
+    .applications, .guide, .version, .news { /*Sections */
+        padding: 10px 0px 0px 20px;
         margin: 25% 5% 0% 5%;
         background-attachment: fixed;
         border-radius: 50px;
-    }
-
-}
-
-/*=========================================== 640 px ===========================================*/
-
-@media (max-width: 640px) {
-
-    nav {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        text-align: center;
-        position: fixed; /* Rend la navigation fixe */
-        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-        top: 70px;
-        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
-        padding: 20px;
-        font-size : 11px;
-    }
-
-
-    nav ul {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        padding: 0;
-        text-align: center;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        padding: 5px 20px;
-        border: 0px solid transparent;
-        transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-        font-size: 11px;
-        font-style: bold;
-    }
-    .applications, .guide, .version, .news { /*Sections */
-        padding: 20px;
-        background-color: white;
-        margin: 25% 5% 0% 5%;
-        background-attachment: fixed;
-        border-radius: 50px;
-    }
-}
-
-/*=========================================== 595 px ===========================================*/
-
-@media (max-width: 595px) {
-
-    nav {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        text-align: center;
-        position: fixed; /* Rend la navigation fixe */
-        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-        top: 70px;
-        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
-        padding: 20px;
-        font-size : 10px;
-    }
-
-
-    nav ul {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        padding: 0;
-        text-align: center;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        padding: 5px 20px;
-        border: 0px solid transparent;
-        transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-        font-size: 10px;
-        font-style: bold;
-    }
-    
-    .applications, .guide, .version, .news { /*Sections */
-        padding: 20px;
-        background-color: white;
-        margin: 25% 5% 0% 5%;
-        background-attachment: fixed;
-        border-radius: 50px;
-    }
-}
-
-/*=========================================== 550 px ===========================================*/
-
-@media (max-width: 550px) {
-
-    nav {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        text-align: center;
-        position: fixed; /* Rend la navigation fixe */
-        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-        top: 70px;
-        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
-        padding: 20px;
-        font-size : 9px;
-    }
-
-
-    nav ul {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        padding: 0;
-        text-align: center;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        padding: 5px 15px;
-        border: 0px solid transparent;
-        transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-        font-size: 9px;
-        font-style: bold;
-    }
-
-    .applications, .guide, .version, .news { /*Sections */
-        padding: 20px;
-        background-color: white;
-        margin: 25% 5% 0% 5%;
-        background-attachment: fixed;
-        border-radius: 50px;
-    }
-}
-
-
-/*=========================================== 505 px ===========================================*/
-
-@media (max-width: 505px) {
-
-    nav {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        text-align: center;
-        position: fixed; /* Rend la navigation fixe */
-        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-        top: 70px;
-        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
-        padding: 20px;
-        font-size : 8px;
-    }
-
-
-    nav ul {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        padding: 0;
-        text-align: center;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        padding: 5px 5px;
-        border: 0px solid transparent;
-        transition: 0.3s;
-    }
-
-    nav ul li a:hover {font-style: bold;
-        font-size: 8px;
-        font-style: bold;
-    }
-
-
-    .applications, .guide, .version, .news { /*Sections */
-        padding: 20px;
-        background-color: white;
-        margin: 25% 5% 0% 5%;
-        background-attachment: fixed;
-        border-radius: 50px;
-    }
-}
-
-/*=========================================== 470 px ===========================================*/
-
-@media (max-width: 470px) {
-
-    nav {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        text-align: center;
-        position: fixed; /* Rend la navigation fixe */
-        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-        top: 70px;
-        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
-        padding: 20px;
-        font-size : 8px;
-    }
-
-
-    nav ul {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        padding: 0;
-        text-align: center;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        padding: 5px 5px;
-        border: 0px solid transparent;
-        transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-        font-size: 8px;
-        font-style: bold;
-    }
-
-    .applications, .guide, .version, .news { /*Sections */
-        padding: 20px;
-        background-color: white;
-        margin: 30% 5% 0% 5%;
-        background-attachment: fixed;
-        border-radius: 50px;
-    }
-
-}
-
-/*=========================================== 455 px ===========================================*/
-
-@media (max-width: 455px) {
-
-    nav {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        text-align: center;
-        position: fixed; /* Rend la navigation fixe */
-        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-        top: 70px;
-        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
-        padding: 20px;
-        font-size : 8px;
-    }
-
-
-    nav ul {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        padding: 0;
-        text-align: center;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        padding: 5px 5px;
-        border: 0px solid transparent;
-        transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-        font-size: 8px;
-        font-style: bold;
-    }
-
-    .applications, .guide, .version, .news { /*Sections */
-        padding: 20px;
-        background-color: white;
-        margin: 35% 5% 0% 5%;
-        background-attachment: fixed;
-        border-radius: 50px;
-    }
-
-    .subtitleApp{
-        margin: -25px 0px 0px 10px;
-        font-size: 10px;
-    }
-
-    .imagelogoStockWare{
-        width: 30px;
-        margin: -70px 0px 15px 10px;
-    }
-
-    .menu{
-        font-size: 25px;
-        margin: 20px 0px 0px 50px;
-    }
-}
-
-
-/*=========================================== 420 px ===========================================*/
-
-@media (max-width: 420px) {
-
-    nav {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        text-align: center;
-        margin: 6px 0px 0px 0px; /*Position de départ*/
-        position: fixed; /* Rend la navigation fixe */
-        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-        top: 70px;
-        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
-        padding: 20px;
-        font-size : 8px;
-    }
-
-
-    nav ul {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        padding: 0;
-        text-align: left;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        padding: 0px 0px;
-        border: 0px solid transparent;
-        transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-        font-size: 8px;
-        font-style: bold;
-    }
-
-
-}
-/*=========================================== 395 px ===========================================*/
-
-@media (max-width: 395px) {
-
-    nav {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        text-align: center;
-        position: fixed; /* Rend la navigation fixe */
-        width: 100%; /* S'assure que la barre de navigation prenne toute la largeur de la page */
-        top: 70px;
-        z-index: 1000; /* S'assure que la barre de navigation soit au-dessus des autres éléments */
-        padding: 20px;
-        font-size : 7px;
-    }
-
-
-    nav ul {
-        background-color: #013b78;
-        overflow: hidden;
-        color: white;
-        padding: 0;
-        text-align: letf;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 20px, 0px 0px 0px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        padding: 5px 0px;
-        border: 0px solid transparent;
-        transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-        font-size: 9px;
-        font-style: bold;
-    }
-
-    .applications, .guide, .version, .news { /*Sections */
-        padding: 20px;
-        background-color: white;
-        margin: 35% 5% 0% 5%;
-        background-attachment: fixed;
-        border-radius: 50px;
+        border: #b9c4ce solid 1px;
+        box-shadow: 10px 10px 15px #8a8787;
     }
 }
 
