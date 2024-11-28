@@ -134,6 +134,12 @@ li {
     margin-bottom: 10px;
 }
 
+
+.titreInformation{
+    font-size:50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 /*=========================================== 840 px ===========================================*/
 
 @media (max-width: 840px) {
