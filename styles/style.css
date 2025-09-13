@@ -153,6 +153,24 @@ footer {
     box-sizing: border-box;
 }
 
+
+.error-button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.error-button:hover {
+    transform: scale(1.1);
+    background-color: #e65c00;
+}
+
 .error-content {
     background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
     padding: 50px;
@@ -164,6 +182,7 @@ footer {
 
 .error-illustration {
     max-width: 250px;
+    border-radius: 50%;
     margin-bottom: 30px;
     animation: wiggle 2s ease-in-out infinite; /* Petite animation pour rendre le rat vivant */
 }
@@ -176,7 +195,7 @@ footer {
 .error-title {
     font-family: 'Balsamiq Sans', cursive;
     font-size: 8rem;
-    color: var(--jungle-green-dark);
+    color: var(--jungle-green);
     margin: 0;
     line-height: 1;
     text-shadow: 5px 5px 0px var(--sun-yellow);
@@ -194,14 +213,14 @@ footer {
 .error-content h2 {
     font-family: 'Balsamiq Sans', cursive;
     font-size: 2rem;
-    color: var(--accent-orange);
+    color: var(--jungle-green);
     margin-top: 20px;
 }
 
 .error-content p {
     font-family: 'Nunito', sans-serif;
     font-size: 1.2rem;
-    color: var(--text-dark);
+    color: var(--jungle-green);
     margin-top: 20px;
     margin-bottom: 40px;
 }
