@@ -1,0 +1,134 @@
+/* Import des polices depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@700&family=Lato:wght@400;700&display=swap');
+
+/* Variables de couleur pour la cohérence */
+:root {
+    --jungle-green: #14532d;      /* vert profond */
+    --jungle-green-light: #1e7a46; /* vert plus lumineux */
+    --earth-brown: #8b5a2b;       /* brun chaud et naturel */
+    --parchment-beige: #f8f1e1;   /* beige clair et doux */
+    --accent-gold: #ffb347;       /* touche dorée/jungle soleil */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--jungle-green);
+    color: var(--parchment-beige);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* --- EFFET PARALLAXE POUR LE HÉROS --- */
+#hero {
+    height: 100vh;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* La magie du parallaxe ! */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.hero-content .logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Khand', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- SECTIONS GÉNÉRALES --- */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Khand', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Ajoute une liane décorative sous les titres */
+section h2::after {
+    background: var(--accent-gold); /* ligne décorative dorée */
+}
+
+/* --- BOUTON D'APPEL À L'ACTION (CTA) --- */
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-orange);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+    background-color: #e65c00;
+}
+
+/* --- GRILLE DES COMBATTANTS --- */
+.fighters-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.animal-card {
+    background-color: var(--earth-brown);
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    border: 4px solid var(--parchment-beige);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.animal-card:hover {
+    transform: translateY(-15px); /* Effet de soulèvement */
+}
+
+.animal-card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.img-logo{
+    border-radius: 20%;
+     max-width: 250px;
+}
+/* --- SECTION TÉLÉCHARGEMENT --- */
+#download {
+    background-color: var(--earth-brown);
+}
+
+.store-badge {
+    width: 220px;
+    transition: transform 0.3s;
+}
+
+.store-badge:hover {
+    transform: scale(1.05);
+}
+
+footer {
+  background-color: var(--jungle-green-light);
+  color: var(--parchment-beige);
+  padding: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+}

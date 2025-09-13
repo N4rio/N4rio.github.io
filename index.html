@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" type="image/png" href="images/elephant.ico">
+    <title>DouShou Qi - Le Jeu de la Jungle</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header id="hero">
+        <div class="hero-content">
+            <img class="img-logo" src="images/logo.png" alt="Logo DouShou Qi" class="logo">
+            <h1>Doushou Qi</h1>
+            <h1>La loi de la jungle entre vos mains.</h1>
+            <p>Un jeu de stratégie ancestral où seuls les plus rusés survivent.</p>
+            <a href="#download" class="cta-button">Télécharger le Jeu</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="game-intro">
+    <h2>Qu'est-ce que DouShou Qi ?</h2>
+    <p>
+        <strong>DouShou Qi</strong>, aussi appelé <em>Jeu de la Jungle</em>, est un jeu de plateau 
+        stratégique originaire de Chine. Chaque joueur dirige une armée de huit animaux, 
+        chacun doté de forces et de faiblesses uniques. 
+        Le but : pénétrer dans le repaire adverse ou éliminer tous ses animaux.
+    </p>
+    <p>
+        Bien plus qu’un simple affrontement, c’est une bataille de ruse, 
+        d’anticipation et de courage, où le plus petit peut triompher du plus grand !
+    </p>
+</section>
+
+        <section id="fighters">
+    <h2>Découvrez vos Combattants</h2>
+    <div class="fighters-grid">
+        <!-- 8 ANIMAUX AVEC DESCRIPTIONS -->
+        <div class="animal-card">
+            <img src="images/animals/elephant.png" alt="Image Éléphant">
+            <h3>L'Éléphant (8)</h3>
+            <p>Le colosse de la jungle, capable d’écraser presque tout adversaire... sauf le rat.</p>
+        </div>
+
+        <div class="animal-card">
+            <img src="images/animals/lion.png" alt="Image Lion">
+            <h3>Le Lion (7)</h3>
+            <p>Roi des félins, il saute par-dessus les rivières et inspire la crainte.</p>
+        </div>
+
+        <div class="animal-card">
+            <img src="images/animals/tiger.png" alt="Image Tigre">
+            <h3>Le Tigre (6)</h3>
+            <p>Rapide et redoutable, il bondit comme le lion, mais reste vulnérable aux ruses.</p>
+        </div>
+
+        <div class="animal-card">
+            <img src="images/animals/panther.png" alt="Image Léopard">
+            <h3>Le Léopard (5)</h3>
+            <p>Un prédateur vif et agile, prêt à attaquer les proies de taille moyenne.</p>
+        </div>
+        
+        <div class="animal-card">
+            <img src="images/animals/wolf.png" alt="Image Loup">
+            <h3>Le Loup (4)</h3>
+            <p>Stratège habile, il se faufile et surprend les adversaires imprudents.</p>
+        </div>
+
+        <div class="animal-card">
+            <img src="images/animals/dog.png" alt="Image Chien">
+            <h3>Le Chien (3)</h3>
+            <p>Fidèle et rusé, il est un excellent défenseur, surtout près des rivières.</p>
+        </div>
+
+
+        <div class="animal-card">
+            <img src="images/animals/cat.png" alt="Image Chat">
+            <h3>Le Chat (2)</h3>
+            <p>Petit mais féroce, il peut tenir tête aux adversaires proches de sa taille.</p>
+        </div>
+
+        <div class="animal-card">
+            <img src="images/animals/rat.png" alt="Image Rat">
+            <h3>Le Rat (1)</h3>
+            <p>Le plus faible en apparence, mais le seul capable de renverser l’Éléphant !</p>
+        </div>
+    </div>
+</section>
+
+        <section id="rules">
+    <h2>Comment Jouer ?</h2>
+    <div class="rules-steps">
+        <div class="step">
+            <span class="step-number">1</span>
+            <h3>Préparez le plateau</h3>
+            <p>
+                Chaque joueur place ses 8 animaux de son côté de la jungle, chacun à sa position 
+                initiale. Le plateau est composé de cases, de rivières, de pièges et de tanières.
+            </p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">2</span>
+            <h3>Déplacez vos animaux</h3>
+            <p>
+                À tour de rôle, déplacez un de vos animaux d’une case (horizontalement ou verticalement).  
+                <strong>Exceptions :</strong> le <em>Lion</em> et le <em>Tigre</em> peuvent sauter par-dessus les rivières.  
+                Le <em>Rat</em>, lui, est le seul capable d’entrer dans l’eau.
+            </p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">3</span>
+            <h3>Affrontez vos adversaires</h3>
+            <p>
+                Un animal peut capturer un adversaire s’il est d’un rang égal ou supérieur.  
+                <strong>Attention :</strong> le <em>Rat (1)</em> peut vaincre l’<em>Éléphant (8)</em> !  
+                Les pièges autour de la tanière affaiblissent toute bête qui s’y aventure.
+            </p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">4</span>
+            <h3>Utilisez le terrain</h3>
+            <p>
+                Les <em>rivières</em> bloquent la plupart des animaux.  
+                Les <em>pièges</em> désactivent temporairement la puissance d’un animal.  
+                La <em>tanière</em> est votre repaire sacré : protégez-la à tout prix !
+            </p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">5</span>
+            <h3>Remportez la partie</h3>
+            <p>
+                Vous gagnez en entrant dans la <strong>tanière de votre adversaire</strong> 
+                ou si tous ses animaux sont capturés.  
+                À vous de choisir entre l’offensive brutale ou la ruse silencieuse !
+            </p>
+        </div>
+    </div>
+    <p style="margin-top:30px; font-style:italic;">
+        💡 Astuce : n’oubliez pas que la force brute ne fait pas tout… 
+        parfois, c’est le plus petit animal qui change le cours de la bataille !
+    </p>
+</section>
+
+
+<section id="about">
+    <h2>À propos du projet</h2>
+    <p>
+        <strong>DouShou Qi – Le Jeu de la Jungle</strong> est un projet passionné, 
+        développé par une petite équipe de jeunes bénévoles.  
+        Notre objectif ? Faire découvrir (ou redécouvrir) ce jeu ancestral à un maximum de joueurs, 
+        dans un esprit de convivialité et de partage. 🌿
+    </p>
+    <p>
+        Nous ne cherchons pas le profit : nous développons ce jeu avant tout 
+        pour apprendre, nous amuser et faire plaisir à la communauté.  
+        C’est pourquoi <strong>le jeu ne contient aucune publicité</strong> afin de préserver une 
+        expérience utilisateur fluide et agréable. ✨
+    </p>
+    <p>
+        Vos retours sont précieux ! 🙌  
+        N’hésitez pas à nous envoyer vos idées, suggestions ou critiques constructives 
+        afin que nous puissions améliorer le jeu ensemble.
+    </p>
+    <p>
+        Si vous appréciez notre travail et souhaitez nous soutenir, 
+        vous pouvez contribuer par un petit don. 💚
+    </p>
+    <a href="LIEN_VERS_PAGE_DON" target="_blank" class="cta-button">
+        Soutenir le projet
+    </a>
+</section>
+
+        <section id="download">
+    <h2>Prêt à dominer la Jungle ?</h2>
+    <p>
+        Le moment est venu de mettre vos talents de stratège à l’épreuve. 
+        Saurez-vous protéger votre tanière, déjouer les ruses de l’adversaire 
+        et mener vos bêtes vers la victoire ? 🌿
+    </p>
+    <p>
+        <strong>DouShou Qi</strong> n’est pas seulement un jeu, c’est une 
+        véritable aventure où chaque décision compte. 
+        Que vous soyez un joueur occasionnel ou un compétiteur acharné, 
+        la jungle vous mettra au défi !
+    </p>
+    <ul style="max-width:600px; margin:30px auto; text-align:left; line-height:1.8;">
+        <li>🐘 Dirigez <strong>8 animaux aux pouvoirs uniques</strong></li>
+        <li>🌊 Exploitez le <strong>terrain</strong> : rivières, pièges et tanières</li>
+        <li>⚔️ Affrontez vos amis dans des <strong>duels stratégiques</strong></li>
+        <li>🏆 Prouvez que vous êtes le <strong>roi de la jungle</strong></li>
+    </ul>
+    <p>
+        Téléchargez le jeu gratuitement et entrez dans la légende !
+    </p>
+    <a href="LIEN_VERS_LE_PLAY_STORE" target="_blank">
+        <img src="images/Google_Play_Store_badge_FR.png" alt="Disponible sur Google Play" class="store-badge">
+    </a>
+</section>
+    </main>
+
+    <footer>
+        <p>© 2025 Lesa - L'Aventure DouShou Qi. Tous droits réservés.</p>
+        <p>Nous contacter : doushouqi.lesa@gmail.com</p>
+    </footer>
+
+    <script src="javascript/animations.js"></script>
+</body>
+</html>
