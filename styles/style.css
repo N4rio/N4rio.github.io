@@ -229,3 +229,27 @@ footer {
 .error-content .cta-button {
     font-size: 1.3rem;
 }
+
+
+
+
+
+
+@media (max-width: 490px) {
+    .error-title {
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 5rem;
+        color: var(--jungle-green);
+        margin: 0;
+        line-height: 1;
+        text-shadow: 5px 5px 0px var(--sun-yellow);
+    }
+}
+
+@media (max-width: 415px) {
+    h1 {
+        font-family: 'Khand', sans-serif;
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+}
