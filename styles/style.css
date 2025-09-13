@@ -132,3 +132,81 @@ footer {
   text-align: center;
   font-size: 0.9rem;
 }
+
+
+/* --- PAGE ERREUR 404 --- */
+
+.error-page-background {
+    background-color: var(--sky-blue); /* Utilise une couleur de fond simple et joyeuse */
+    background-image: url('jungle-background-simple.png'); /* Une version plus légère du fond cartoon */
+    background-size: cover;
+    background-position: center;
+}
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.error-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 0px var(--jungle-green-dark);
+    border: 5px solid var(--accent-orange);
+    max-width: 600px;
+}
+
+.error-illustration {
+    max-width: 250px;
+    margin-bottom: 30px;
+    animation: wiggle 2s ease-in-out infinite; /* Petite animation pour rendre le rat vivant */
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+}
+
+.error-title {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 8rem;
+    color: var(--jungle-green-dark);
+    margin: 0;
+    line-height: 1;
+    text-shadow: 5px 5px 0px var(--sun-yellow);
+}
+
+.error-title .digit {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.error-title .digit:hover {
+    transform: scale(1.2) rotate(10deg); /* Les chiffres bougent au survol */
+}
+
+.error-content h2 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2rem;
+    color: var(--accent-orange);
+    margin-top: 20px;
+}
+
+.error-content p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* On réutilise le style du bouton principal pour la cohérence */
+.error-content .cta-button {
+    font-size: 1.3rem;
+}
