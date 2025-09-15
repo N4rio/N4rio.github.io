@@ -65,7 +65,7 @@ section h2::after {
 /* --- BOUTON D'APPEL À L'ACTION (CTA) --- */
 .cta-button {
     display: inline-block;
-    background-color: var(--accent-orange);
+    background-color: black;
     color: white;
     padding: 15px 30px;
     border-radius: 50px;
