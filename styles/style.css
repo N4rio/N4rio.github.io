@@ -231,7 +231,15 @@ footer {
 }
 
 
-
+ul {
+    list-style-type: "🐘 -  ";
+    margin-left: 20px;
+    line-height: 1.8em;
+}
+.sub-list {
+    list-style-type: "🐭 -  ";
+    margin-left: 40px;
+}
 
 
 
